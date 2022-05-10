@@ -4,18 +4,16 @@
 from goods import Goods
 
 
+class Category:
 
-
-class Category():
-
-    def __init__(self, category: int, name: str, goods):
+    def __init__(self, category: int, name: str):
         if not isinstance(category, int):
             raise TypeError('Не верный тип данных для Кода Категории товара')
         self.category = category
         if not isinstance(name, str):
             raise TypeError('Не верный тип данных для Названия Категории товара')
         self.name = name
-        self.goods = goods
+
 
 
     def display_product(self):

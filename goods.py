@@ -3,7 +3,7 @@
 """
 
 
-class Goods():
+class Goods:
 
     def __init__(self, id: int, name: str, price: float, unit: str, volume: int, rating: int):
         if not isinstance(id, int):
