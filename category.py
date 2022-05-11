@@ -22,7 +22,7 @@ class Category:
 
 if __name__ == '__main__':
 
-    # Создаем 3 категории товаров
+    # Создаем 4  категории товаров
 
     print(100 * '*')
     category1 = Category(1, 'Молочные продукты')
@@ -31,7 +31,8 @@ if __name__ == '__main__':
     Category.display_product(category2)
     category3 = Category(3, 'Фрукты и овощи')
     Category.display_product(category3)
-
+    category4 = Category(3, 'Мясные продукты')
+    Category.display_product(category3)
 
 
     # Создаем 5 товаров
@@ -49,6 +50,18 @@ if __name__ == '__main__':
     Goods.display_product(goods4)
 
 
-    # # Связываем категории товаров с продуктами
+    # Связываем категории товаров с продуктами
+
+    print(100 * '*')
+
+    category1.goods = ['Молоко', 'Масло сливочное']
+    category2.goods = ['Икра лососовая']
+    category3.goods = ['Картофель']
+    category4.goods = ['Колбаса вареная']
+
+    print(category1.__dict__)
+    print(category2.__dict__)
+    print(category3.__dict__)
+    print(category4.__dict__)
     # item = Category(goods,)
     # print(item.name, item.category)
